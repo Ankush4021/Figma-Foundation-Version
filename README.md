@@ -30,4 +30,4 @@ This project demonstrates core canvas interactions such as **drag, resize, rotat
 
 - **HTML**
 - **CSS**
-- **JavaSc**
+- **JavaScript**
