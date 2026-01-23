@@ -1,0 +1,217 @@
+/* CSS Boilerplate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Inter, system-ui, sans-serif;
+    ;
+    color: #fff;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    height: 100px;
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    background-color: #1e1e1e;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 2px solid #2e2e2e;
+}
+
+.toolbar .heading h2 {
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.toolbar .toolbar-properties {
+    display: flex;
+    gap: 30px;
+}
+
+.toolbar .toolbar-properties .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:active {
+    scale: 0.97;
+}
+
+.canvas-section {
+    flex: 1;
+}
+
+.canvas-container {
+    /* height: calc(100%-100px); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.canvas-container .canvas-properties {
+    height: 100%;
+    width: 20%;
+    background-color: #1a1a1a;
+    border-right: 2px solid #2e2e2e;
+    padding: 10px 15px;
+}
+
+.canvas-container .canvas-properties h3 {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.canvas-container .canvas-editor {
+    height: 100%;
+    width: 80%;
+    background-color: #FCFCFC;
+    border: 2px solid #D1D5DB;
+    position: relative;
+}
+
+.element-text.selected {
+    outline: 2px solid #4C8DFF;
+}
+
+.element-rectangle.selected {
+    outline: 2px solid #111;
+}
+
+.resize-handler {
+    height: 8px;
+    width: 8px;
+    background: #1e1e12;
+    position: absolute;
+    z-index: 10;
+    top: -5px;
+    left: -5px;
+    /* border-radius: 5px; */
+    cursor: se-resize;
+}
+
+.resize-handler.tl {
+    top: -6px;
+    left: -6px;
+    cursor: nwse-resize;
+}
+
+.resize-handler.tr {
+    top: -6px;
+    right: -6px;
+    cursor: se-resize;
+}
+
+.resize-handler.bl {
+    bottom: -6px;
+    left: -6px;
+    cursor: nesw-resize;
+}
+
+.resize-handler.br {
+    bottom: -6px;
+    right: -6px;
+    cursor: nwse-resize;
+}
+
+.element-rectangle,
+.element-text {
+    overflow: visible;
+}
+
+.rotate-handle {
+    width: 12px;
+    height: 12px;
+    background: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: grab;
+    z-index: 10;
+}
+
+.canvas-properties .properties-sizing{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 25px;
+}
+
+.canvas-properties .properties-sizing .height, .width{
+    display: flex;
+    gap: 10px;
+    padding: 5px 5px;
+    justify-content: space-between;
+}
+.canvas-properties .properties-sizing, .properties-color-panel, .properties-text label{
+    font-size: 30px;
+    text-align: center;
+}
+.canvas-properties .properties-sizing input{
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    padding: 2px 5px;
+    width: 60px;
+    text-align: center;
+}
+
+.canvas-properties .properties-color-panel{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.properties-color-panel input{
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.canvas-properties .properties-text{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+
+.canvas-properties .properties-text input{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma - Foundation Version</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- Toolbar -->
+        <section class="toolbar-section">
+            <div class="toolbar">
+                <div class="heading">
+                    <h2>Figma - Mini Version</h2>
+                </div>
+                <div class="toolbar-properties">
+                    <button class="btn add-rectangle">Add Rectange</button>
+                    <button class="btn add-text">Add Text</button>
+                    <button class="btn export-json">Export JSON</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Canvas -->
+        <section class="canvas-section">
+            <div class="canvas-container">
+                <div class="canvas-properties">
+                    <h3>Properties</h3>
+                    <div class="properties-sizing">
+                        <div class="width">
+                            <label> Width</label>
+                            <input type="number" id="propertiesWidth">
+                        </div>
+                        <div class="height">
+                            <label>Height</label>
+                            <input type="number" id="propertiesHeight">
+                        </div>
+                    </div>
+                    <div class="properties-color-panel">
+                        <label>Color</label>
+                        <input type="color" id="propertiesColor">
+                    </div>
+
+                    <div class="properties-text">
+                        <label >Text </label>
+                        <input type="text" id="propertiesText">
+                    </div>
+                </div>
+
+                <div class="canvas-editor">
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
